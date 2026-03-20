@@ -6,18 +6,13 @@ public class Main {
 
         System.out.println("=== Train Consist Management App ===");
 
-        List<String> passengerBogies = new ArrayList<>();
+        Set<String> bogieIds = new HashSet<>();
 
-        passengerBogies.add("Sleeper");
-        passengerBogies.add("AC Chair");
-        passengerBogies.add("First Class");
+        bogieIds.add("BG101");
+        bogieIds.add("BG102");
+        bogieIds.add("BG101"); // duplicate
+        bogieIds.add("BG103");
 
-        System.out.println("After Adding Bogies: " + passengerBogies);
-
-        passengerBogies.remove("AC Chair");
-
-        System.out.println("After Removing AC Chair: " + passengerBogies);
-
-        System.out.println("Contains Sleeper? " + passengerBogies.contains("Sleeper"));
+        System.out.println("Unique Bogie IDs: " + bogieIds);
     }
 }
