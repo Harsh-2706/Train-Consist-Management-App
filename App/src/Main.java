@@ -6,8 +6,18 @@ public class Main {
 
         System.out.println("=== Train Consist Management App ===");
 
-        List<String> consist = new ArrayList<>();
+        List<String> passengerBogies = new ArrayList<>();
 
-        System.out.println("Initial Bogie Count: " + consist.size());
+        passengerBogies.add("Sleeper");
+        passengerBogies.add("AC Chair");
+        passengerBogies.add("First Class");
+
+        System.out.println("After Adding Bogies: " + passengerBogies);
+
+        passengerBogies.remove("AC Chair");
+
+        System.out.println("After Removing AC Chair: " + passengerBogies);
+
+        System.out.println("Contains Sleeper? " + passengerBogies.contains("Sleeper"));
     }
 }
